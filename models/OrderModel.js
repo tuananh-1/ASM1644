@@ -7,6 +7,7 @@ var OrderSchema = mongoose.Schema(
       email : String,
       phonenumber : Number,
       quantity : Number,
+      
    }
 );
 

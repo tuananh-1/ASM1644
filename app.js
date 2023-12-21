@@ -21,6 +21,10 @@ mongoose.connect(uri)
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended : false}));
 
+//date
+var hbs = require('hbs');
+hbs.registerHelper('dateFormat', require('handlebars-dateformat')); 
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

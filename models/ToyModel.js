@@ -7,11 +7,8 @@ var ToySchema = mongoose.Schema(
       quantity : Number,
       price : Number,
       image : String,
-      brand: {
-         type: mongoose.Schema.Types.ObjectId,
-         ref: 'brands'  // 'brands': collection
-      }
-     
+      country: String,
+      date: Date,
       
    }
 );

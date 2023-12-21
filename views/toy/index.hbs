@@ -8,10 +8,13 @@
    </tr>
    <tr>
       <th>Name</th>
-      <th>Type</th>
+      {{!-- <th>Type</th> --}}
       <th>Quantity</th>
       <th>Price</th>
       <th>Image</th>
+      <th>date</th>
+      <th>Country</th>
+      
       {{!-- <th>Video</th> --}}
     
 
@@ -21,7 +24,7 @@
    {{#each toys }}
    <tr>
       <th>{{ name }}</th>
-      <th>{{ type }}</th>
+      {{!-- <th>{{ type }}</th> --}}
       <th>{{ quantity }}</th>
       <th>{{ price }}</th>
       <th>
@@ -31,7 +34,8 @@
          <iframe src="https://www.youtube.com/embed/{{ video }}" 
          width="300" height="200"></iframe>
       </th> --}}
-      <th>{{brand}}</th>
+      <th>{{ dateFormat dob "DD/MM/YYYY" }}</th>
+      <th>{{country}}</th>
       <th>
          <a class="btn btn-warning" href="/toy/edit/{{_id}}">Edit</a>
          <a class="btn btn-danger" href="/toy/delete/{{_id}}"
